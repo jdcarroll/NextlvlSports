@@ -103,10 +103,6 @@ form button{
 					Nav Elements
 ===================================================*/
 
-#menu {
-	display: none;
-}
-
 
 nav {
 	margin-top: 0px;
@@ -243,16 +239,34 @@ footer h3:last-child{
 					Media Queries
 ===================================================*/
 
+@media screen  and (max-width:789px){
+	section > div > article{
+		width:45%;
+		margin: 10px auto;
+	}
+	section > div > article:nth-of-type(2){
+		float: right;
+	}
+
+	 section > div > article:nth-of-type(3){
+	 	clear:both;
+	 	float: none;
+	 	width: 45%;
+	 	margin: 0px auto;
+	 }
+}
+
+
 @media screen  and (max-width:786px) {
 	
 	section > div > article {
 		float: none;
-		width:95%; 
+		width:95%;
 		margin: 10px auto;
 	}
 
-	form input[type = search] {
-		display: none;
+	section > div > article:nth-of-type(3) {
+		width: 95%;
 	}
 
 	header {
@@ -287,29 +301,35 @@ footer h3:last-child{
 	}
 
 	nav li {
+		background-color: #020F46;
 		width: 100%;
 		font-size: 1.8em;
+	}
+
+	nav li a {
+		color: #ffffff;
+	}
+
+	nav li a:hover {
+		background-color: #ffffff;
+		color: #020F46;
 	}
 
 	nav li:last-child{
 		margin-bottom: 10px;
 	}
 
-	#menu {
-		cursor: pointer;
-		display: none;
-		border-left: 1px solid #C2C7C7;
-		width: 4%;
-		margin-top: 0px;
-		padding-bottom: 30px;
-		float: right;
-		background-image: url(../images/menu.png);
-		background-repeat: no-repeat;
-		zoom: 100%;
+	footer {
+		height: 30px;
 	}
 
 	footer h3 a {
 		padding: 0 10px;
 		font-size: .1em;
 	}
+
+	footer > div > h3 > a {
+		line-height: 30px;
+	}
+
 }
