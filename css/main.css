@@ -168,27 +168,33 @@ section:nth-of-type(1) img[src="images/cta.jpg"]{
 
 section:nth-of-type(2) {
 	clear:both;
-	margin: auto;
+	width: 100%;
+	margin: 0 auto;
 	padding-bottom: 450px;
 }
 
-section > article {
+section > div {
+	width: 95%;
+	margin: 0 auto;
+}
+
+section > div > article {
 	float: left;
 	box-shadow: 1px 1px 5px #666666;
 	padding: 10px;
 	padding-bottom: 10px;
-	margin: 10px 10px;
+	margin: 10px;
 	width: 28%;
 	min-height: 250px;
 	background-color: #ffffff;
 }
 
-section > article > div {
+section > div > article > div {
 	max-height: 194px;
 	overflow: hidden;
 }
 
-section > article > div + a {
+section > div > article > div + a {
 	padding-top: 10px;
 	float: right;
 }
@@ -239,7 +245,7 @@ footer h3:last-child{
 
 @media screen  and (max-width:786px) {
 	
-	section > article {
+	section > div > article {
 		float: none;
 		width:95%; 
 		margin: 10px auto;
