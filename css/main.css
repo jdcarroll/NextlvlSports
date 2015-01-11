@@ -1,0 +1,224 @@
+/* ================================================
+ 	Author: Jeff Carroll
+	Class: DWS2
+	Purpose: Week one Project 
+	Site: http://jdcarroll.github.io/NextlvlSports/index.html
+	Date: 1/9/2015
+
+/* ================================================
+					Color Swatches  
+===================================================
+	Blue 		#020F46;
+	Red 		#A40C34;
+	Gray 		#C2C7C7;
+	D.Gray 		#666666;
+================================================== */
+
+/*=================================================
+					Main Elements
+===================================================*/
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font: 62.5%/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;	
+	background: #FFFFFF;
+	color: #474747;
+}
+
+#wrapper {
+	max-width: 960px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+#logo_background {
+	display: block;
+	position: relative;
+}
+
+#logo_background::after {
+	content: "";
+	background: url(../images/Half_LogoBW.svg);
+	opacity: 0.025;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+/*=================================================
+					Header Elements
+===================================================*/
+
+img[src="images/full_Logo.svg"] {
+	width:15%;
+	float: left;
+	padding-bottom: 20px;
+}
+
+form {
+	float: right;
+}
+
+form input[type = search]{
+	border-radius: 0px;
+	float: left;
+	padding-top: 2px;
+	margin-top: 8px;
+	border-color: #C2C7C7;
+	border-width: 1px;
+	color: #666666;
+}
+
+form button{
+	border: 1px solid #C2C7C7;
+	background-color: #ffffff;
+	background-image: url(../images/Search.png);
+	cursor: pointer;
+	float: right;
+	zoom: 55%;
+	margin-left: 5px;
+	margin-top: 14px;
+	padding: 15px;
+	width: 7%;
+}
+
+/*=================================================
+					Nav Elements
+===================================================*/
+
+
+
+nav {
+	margin-top: 0px;
+	width: 65%;
+	display: block;
+	background-color: #FFFFFF;
+	float: left;
+}
+
+nav ul {
+	background-color: #020F46;
+	margin: 0 auto;
+	width: 100%;
+	padding-left: 0;
+	list-style-type: none;
+	overflow: hidden;
+	
+}
+
+nav li{
+	text-align: center;
+	float: left;
+	width: 20%;
+	text-transform: capitalize;
+	
+}
+
+nav a  {
+	line-height: 30px;
+	display: block;
+	color: #A40C34;
+}
+
+nav a:hover {
+	color: #020F46;
+	background-color: #A40C34;
+}
+
+/*=================================================
+					Page Elements
+===================================================*/
+
+a {
+	text-decoration: none;
+}
+
+section:nth-of-type(1){
+	margin: 0 auto;
+	width: 100%;
+}
+
+section:nth-of-type(1) img {
+	width: 100%;
+	margin-bottom: 5%;
+	box-shadow: 1px 1px 5px #666666;
+	border-radius: 10px;
+}
+
+section:nth-of-type(2) {
+	clear:both;
+	padding-bottom: 450px;
+}
+
+section > article {
+	float: left;
+	box-shadow: 1px 1px 5px #666666;
+	padding: 10px;
+	padding-bottom: 10px;
+	width: 45%;
+	min-height: 300px;
+	background-color: #ffffff;
+}
+
+section > article > div {
+	max-height: 211px;
+	overflow: hidden;
+}
+
+section > article > div + a {
+	padding-top: 10px;
+	float: right;
+}
+
+section > article:nth-child(2){
+	float: right;
+}
+
+
+
+/*=================================================
+					Footer Elements
+===================================================*/
+
+footer {
+	width:100%;
+	height:50px;
+	position:fixed;
+	bottom:0;
+	left:0;
+	background:#020F46;
+	z-index: 1;
+}
+
+footer > div {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+footer a:hover{
+	color: #C2C7C7;
+}
+
+footer > div > h3 {
+	font-size: 1.7em;
+	margin: 0px;
+}
+
+footer > div > h3 > a{
+	color: white;
+	line-height: 50px;
+	float: left;
+	margin: 0px;
+}
+
+footer h3:last-child{
+	float: right;
+}
