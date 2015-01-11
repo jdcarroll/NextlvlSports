@@ -57,14 +57,23 @@ body{
 					Header Elements
 ===================================================*/
 
-img[src="images/full_Logo.svg"] {
+header {
+	padding-bottom: 100px;
+}
+
+#wrapper > header > div:nth-of-type(1) {
 	width:15%;
 	float: left;
 	padding-bottom: 20px;
+	margin-bottom: 5px;
+	background-image: url(../images/full_Logo.svg);
+	background-repeat: no-repeat;
+	zoom: 300%;
 }
 
 form {
 	float: right;
+	margin-right: 10px;
 }
 
 form input[type = search]{
@@ -94,6 +103,9 @@ form button{
 					Nav Elements
 ===================================================*/
 
+#menu {
+	display: none;
+}
 
 
 nav {
@@ -105,7 +117,7 @@ nav {
 }
 
 nav ul {
-	background-color: #020F46;
+	background-color: #FFFFFF;
 	margin: 0 auto;
 	width: 100%;
 	padding-left: 0;
@@ -125,12 +137,12 @@ nav li{
 nav a  {
 	line-height: 30px;
 	display: block;
-	color: #A40C34;
+	color: #020F46;
 }
 
 nav a:hover {
-	color: #020F46;
-	background-color: #A40C34;
+	color: #A40C34;
+	background-color: #020F46;
 }
 
 /*=================================================
@@ -142,19 +154,21 @@ a {
 }
 
 section:nth-of-type(1){
-	margin: 0 auto;
-	width: 100%;
+	margin: auto;
+	width: 98%;
 }
 
-section:nth-of-type(1) img {
+section:nth-of-type(1) img[src="images/cta.jpg"]{
+	margin-top: 10px;
+	clear:both;
 	width: 100%;
-	margin-bottom: 5%;
 	box-shadow: 1px 1px 5px #666666;
 	border-radius: 10px;
 }
 
 section:nth-of-type(2) {
 	clear:both;
+	margin: auto;
 	padding-bottom: 450px;
 }
 
@@ -163,13 +177,14 @@ section > article {
 	box-shadow: 1px 1px 5px #666666;
 	padding: 10px;
 	padding-bottom: 10px;
-	width: 45%;
-	min-height: 300px;
+	margin: 10px 10px;
+	width: 28%;
+	min-height: 250px;
 	background-color: #ffffff;
 }
 
 section > article > div {
-	max-height: 211px;
+	max-height: 194px;
 	overflow: hidden;
 }
 
@@ -177,12 +192,6 @@ section > article > div + a {
 	padding-top: 10px;
 	float: right;
 }
-
-section > article:nth-child(2){
-	float: right;
-}
-
-
 
 /*=================================================
 					Footer Elements
@@ -203,7 +212,7 @@ footer > div {
 	max-width: 960px;
 }
 
-footer a:hover{
+footer a:hover {
 	color: #C2C7C7;
 }
 
@@ -216,9 +225,85 @@ footer > div > h3 > a{
 	color: white;
 	line-height: 50px;
 	float: left;
+	padding: 0 10px;
 	margin: 0px;
 }
 
 footer h3:last-child{
 	float: right;
+}
+
+/*=================================================
+					Media Queries
+===================================================*/
+
+@media screen  and (max-width:786px) {
+	
+	section > article {
+		float: none;
+		width:95%; 
+		margin: 10px auto;
+	}
+
+	form input[type = search] {
+		display: none;
+	}
+
+	header {
+		background-color: #ffffff;
+		box-shadow: 1px 0px 5px #666666;
+		padding-bottom: 45px;
+		margin-bottom: 10px; 
+	}
+
+	#wrapper > header > div:nth-of-type(1){
+		background-image: url(../images/logo_small.png);
+		zoom: 80%;
+		padding-bottom: 50px;
+		padding-right: 220px;
+	}
+	form {
+		margin-right: 0px;
+	}
+	form button{
+		border: none;
+		padding: 15px;
+		border-left: 1px solid #C2C7C7;
+		background-repeat: no-repeat;
+		zoom:100%;
+		margin-top: 0px;
+	}
+
+	nav {
+		display: block;
+		width: 100%;
+		background-color: blue;
+	}
+
+	nav li {
+		width: 100%;
+		font-size: 1.8em;
+	}
+
+	nav li:last-child{
+		margin-bottom: 10px;
+	}
+
+	#menu {
+		cursor: pointer;
+		display: none;
+		border-left: 1px solid #C2C7C7;
+		width: 4%;
+		margin-top: 0px;
+		padding-bottom: 30px;
+		float: right;
+		background-image: url(../images/menu.png);
+		background-repeat: no-repeat;
+		zoom: 100%;
+	}
+
+	footer h3 a {
+		padding: 0 10px;
+		font-size: .1em;
+	}
 }
