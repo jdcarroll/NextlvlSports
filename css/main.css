@@ -336,6 +336,6 @@ footer h3:last-child{
 
 @media screen  and (max-width:375px){
 		#wrapper > header > div:nth-of-type(1){
-			zoom: 60%;
+			zoom: 20%;
 		}
 	}
