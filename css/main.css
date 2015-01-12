@@ -239,7 +239,7 @@ footer h3:last-child{
 					Media Queries
 ===================================================*/
 
-@media screen  and (max-width:789px){
+@media screen  and (max-width:768px){
 	section > div > article{
 		width:45%;
 		margin: 10px auto;
@@ -336,6 +336,6 @@ footer h3:last-child{
 
 @media screen  and (max-width:375px){
 		#wrapper > header > div:nth-of-type(1){
-			zoom: 60%;
+			zoom: 20%;
 		}
 	}
