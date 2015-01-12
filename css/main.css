@@ -239,7 +239,33 @@ footer h3:last-child{
 					Media Queries
 ===================================================*/
 
-@media screen  and (max-width:789px){
+@media screen and (min-width: 500px) and (max-width:768px){
+
+	nav {
+		display: block;
+		width: 100%;
+		background-color: blue;
+	}
+
+	nav li {
+		background-color: #020F46;
+		width: 100%;
+		font-size: 1.8em;
+	}
+
+	nav li a {
+		color: #ffffff;
+	}
+
+	nav li a:hover {
+		background-color: #ffffff;
+		color: #020F46;
+	}
+
+	nav li:last-child{
+		margin-bottom: 10px;
+	}
+	
 	section > div > article{
 		width:45%;
 		margin: 10px auto;
@@ -257,7 +283,7 @@ footer h3:last-child{
 }
 
 
-@media screen  and (max-width:768px) {
+@media screen and (min-width: 375px) and (max-width:499px) {
 	
 	section > div > article {
 		float: none;
@@ -332,10 +358,9 @@ footer h3:last-child{
 		line-height: 30px;
 	}
 
-}
-
-@media screen  and (max-width:375px){
-		#wrapper > header > div:nth-of-type(1){
+	#wrapper > header > div:nth-of-type(1){
 			zoom: 60%;
 		}
-	}
+
+}
+		
