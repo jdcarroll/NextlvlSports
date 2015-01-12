@@ -239,7 +239,7 @@ footer h3:last-child{
 					Media Queries
 ===================================================*/
 
-@media screen and (min-width: 500px) and (max-width:768px){
+@media screen and (min-width: 500px) and (max-width:789px){
 
 	nav {
 		display: block;
@@ -280,6 +280,10 @@ footer h3:last-child{
 	 	width: 45%;
 	 	margin: 0px auto;
 	 }
+
+	 section:nth-of-type(2) {
+	 	padding-bottom: 150px;
+	 }
 }
 
 
@@ -294,6 +298,10 @@ footer h3:last-child{
 	section > div > article:nth-of-type(3) {
 		width: 95%;
 	}
+
+	section:nth-of-type(2) {
+	 	padding-bottom: 150px;
+	 }
 
 	header {
 		background-color: #ffffff;
@@ -313,7 +321,7 @@ footer h3:last-child{
 	}
 	form button{
 		border: none;
-		padding: 15px;
+		padding: 15px 0.03006012024048%;
 		border-left: 1px solid #C2C7C7;
 		background-repeat: no-repeat;
 		zoom:100%;
