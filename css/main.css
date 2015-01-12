@@ -87,16 +87,13 @@ form input[type = search]{
 }
 
 form button{
-	border: 1px solid #C2C7C7;
+	border:none;
 	background-color: #ffffff;
-	background-image: url(../images/Search.png);
 	cursor: pointer;
 	float: right;
-	zoom: 55%;
-	margin-left: 5px;
-	margin-top: 14px;
-	padding: 15px;
-	width: 7%;
+	zoom: 42%;
+	margin-top: 18px;
+	padding-top: 4px;
 }
 
 /*=================================================
@@ -215,7 +212,7 @@ footer > div {
 }
 
 footer a:hover {
-	color: #C2C7C7;
+	color: #A40C34;
 }
 
 footer > div > h3 {
@@ -258,7 +255,7 @@ footer h3:last-child{
 	}
 
 	nav li a:hover {
-		background-color: #ffffff;
+		background-color: #A40C34;
 		color: #020F46;
 	}
 
@@ -284,10 +281,23 @@ footer h3:last-child{
 	 section:nth-of-type(2) {
 	 	padding-bottom: 150px;
 	 }
+
+	 footer {
+		height: 40px;
+	}
+
+	footer h3 a {
+		padding: 0 10px;
+		font-size: .7em;
+	}
+
+	footer > div > h3 > a {
+		line-height: 40px;
+	}
 }
 
 
-@media screen and (min-width: 375px) and (max-width:499px) {
+@media screen and (max-width:499px) {
 	
 	section > div > article {
 		float: none;
@@ -321,11 +331,8 @@ footer h3:last-child{
 	}
 	form button{
 		border: none;
-		padding: 15px 0.03006012024048%;
-		border-left: 1px solid #C2C7C7;
 		background-repeat: no-repeat;
-		zoom:100%;
-		margin-top: 0px;
+		zoom:44%;
 	}
 
 	nav {
@@ -344,8 +351,8 @@ footer h3:last-child{
 		color: #ffffff;
 	}
 
-	nav li a:hover {
-		background-color: #ffffff;
+	nav li a:active {
+		background-color: #A40C34;
 		color: #020F46;
 	}
 
