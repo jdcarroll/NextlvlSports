@@ -251,6 +251,7 @@ footer h3:last-child{
 	}
 
 	nav li a {
+		line-height: 60px;
 		color: #ffffff;
 	}
 
