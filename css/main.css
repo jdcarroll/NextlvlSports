@@ -19,6 +19,13 @@
 					Main Elements
 ===================================================*/
 
+body {
+	background-image: url(../images/sos.png);
+}
+.container {
+	background-color: #ffffff;
+}
+
 .navbar-brand {
 	padding: 10px 10px;
 }
@@ -78,7 +85,6 @@ img[src="images/large_logo.png"] {
 	text-align: right;
 	height: 300px;
 	float: right;
-	border-radius: 10px;
 }
 
 .clearfix {
@@ -95,7 +101,6 @@ section {
 	width: 100%;
 	background-color: #020F46;
 	overflow: auto;
-	border-radius: 10px 10px 0px 0px;
 }
 
 article {
@@ -123,6 +128,12 @@ article a {
 	border-bottom: 1px solid #020F46;
 }
 
+#contact article:nth-of-type(2) {
+	width: 98%;
+	color: #020F46;
+	border-bottom: none;
+}
+
 #contact article div {
 	border-right: 1px solid #020F46;
 	width: 30%;
@@ -134,7 +145,7 @@ article a {
 	margin-top: 0px;
 	border: none;
 	width: auto;
-	float: right;
+	
 	padding-right: 10px;
 	text-align: right;
 }
@@ -150,20 +161,30 @@ article a {
 	font-size: 1.3em;
 }
 
-#contact article div nav {
+#contact article div nav div{
+	margin: 5px;
+	border: none;
+	width: 40%;
+}
 
+#contact article div nav div:nth-of-type(2) {
+	float: right;
 }
 
 #contact article div nav ul {
-	
+	padding-left: 0px;
+	float: left;
 }
 
 #contact article div nav ul li {
 	list-style: none;
 }
-#contact article div nav ul li:nth-of-type(4){
-	float: right;
-}
+
+#contact article div nav ul li a {
+	color: #020F46;
+	font-weight: bold;
+	font-size: 1.2em;
+} 
 /*=================================================
 				Media Query Elements
 ===================================================*/
